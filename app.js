@@ -321,7 +321,7 @@ function renderTable(rows) {
     .map(({ camera, sensor, status, maxDistance, sceneWidth, recommendedFocal, actualDensity }) => `
       <tr>
         <td class="model-cell">
-          <strong>${camera.model}</strong>
+          <strong><a class="model-link" href="http://www.acti.com/product/${encodeURIComponent(camera.model)}" target="_blank" rel="noopener">${camera.model}</a></strong>
           <span>${sensor.sensor_size || t("unknown_sensor")}</span>
         </td>
         <td><span class="status ${statusClass(status)}">${t(`status_${statusClass(status).replace("-", "_")}`)}</span></td>
