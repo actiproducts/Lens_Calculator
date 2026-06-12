@@ -367,7 +367,7 @@ function showDetails(cameraId) {
       ${detailRow(t("detail_lens"), lensText(camera))}
       ${detailRow(t("table_resolution"), `${camera.max_horizontal_resolution} x ${camera.max_vertical_resolution}`)}
       ${detailRow(t("detail_sensor"), sensor.sensor_name)}
-      ${detailRow(t("detail_pixel_size"), `${formatNumber(sensor.pixel_size_um, 3)} um (${sensor.pixel_size_confidence})`)}
+      ${detailRow(t("detail_pixel_size"), `${formatNumber(sensor.pixel_size_um, 3)} um`)}
       ${detailRow(t("detail_recommended_focal"), `${formatNumber(row.recommendedFocal, 2)} mm`)}
       ${detailRow(t("detail_current_objective"), `${doriName(row.dori.name)}, ${doriDensityValue(row.dori)} ${densityLabel()}`)}
     </div>
@@ -388,7 +388,6 @@ function showDetails(cameraId) {
       <p class="eyebrow">${t("source_specs")}</p>
       <p class="muted">${camera.focal_length_raw}</p>
       <p class="muted">${camera.max_frame_rate_vs_resolution.replace(/\n/g, "<br />")}</p>
-      <p class="muted">${t("pixel_size_source")}: ${sensor.pixel_size_source}</p>
     </section>
   `;
 
