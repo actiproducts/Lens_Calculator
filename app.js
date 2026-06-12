@@ -473,6 +473,6 @@ async function init() {
 }
 
 init().catch((error) => {
-  elements.resultCount.textContent = state.db ? t("db_load_error") : "Could not load temporary database.";
+  elements.resultCount.textContent = state.db ? t("db_load_error") : "Could not load database.";
   elements.resultsBody.innerHTML = `<tr><td colspan="7">${error.message}</td></tr>`;
 });

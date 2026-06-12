@@ -89,7 +89,7 @@ const dictionary = [
   ],
   ["source_specs", "Source specs", "Especificaciones fuente", "來源規格"],
   ["pixel_size_source", "Pixel size source", "Fuente del tamaño de píxel", "像素尺寸來源"],
-  ["db_load_error", "Could not load temporary database.", "No se pudo cargar la base de datos temporal.", "無法載入暫用資料庫。"],
+  ["db_load_error", "Could not load database.", "No se pudo cargar la base de datos.", "無法載入資料庫。"],
   ["dori_detection_name", "Detection", "Detección", "偵測"],
   ["dori_observation_name", "Observation", "Observación", "觀察"],
   ["dori_recognition_name", "Recognition", "Reconocimiento", "辨識"],
@@ -190,7 +190,7 @@ function estimateSensor(sensorSize, horizontalResolution) {
     estimated_active_height_mm: defaults.activeHeightMm,
     pixel_size_um: Number(pixelSizeUm.toFixed(3)),
     pixel_size_source: "estimated_from_sensor_format_and_resolution",
-    pixel_size_confidence: "temporary",
+      pixel_size_confidence: "estimated",
     sensor_width_mm: Number(defaults.activeWidthMm.toFixed(3)),
   };
 }

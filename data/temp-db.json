@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.acti.com/products/spec/share/11065",
-  "imported_at": "2026-06-12T14:21:14.519Z",
+  "imported_at": "2026-06-12T15:59:42.900Z",
   "camera": [
     {
       "id": 1,
@@ -500,7 +500,7 @@
       "estimated_active_height_mm": 4.04,
       "pixel_size_um": 2.797,
       "pixel_size_source": "estimated_from_sensor_format_and_resolution",
-      "pixel_size_confidence": "temporary",
+      "pixel_size_confidence": "estimated",
       "acti_max_horizontal_resolution": null,
       "sensor_width_mm": 5.37
     },
@@ -514,7 +514,7 @@
       "estimated_active_height_mm": 5.32,
       "pixel_size_um": 2.671,
       "pixel_size_source": "estimated_from_sensor_format_and_resolution",
-      "pixel_size_confidence": "temporary",
+      "pixel_size_confidence": "estimated",
       "acti_max_horizontal_resolution": null,
       "sensor_width_mm": 7.18
     }
@@ -1026,9 +1026,9 @@
     },
     {
       "key": "db_load_error",
-      "en": "Could not load temporary database.",
-      "es": "No se pudo cargar la base de datos temporal.",
-      "zh_tw": "無法載入暫用資料庫。"
+      "en": "Could not load database.",
+      "es": "No se pudo cargar la base de datos.",
+      "zh_tw": "無法載入資料庫。"
     },
     {
       "key": "dori_detection_name",
