@@ -24,6 +24,10 @@ await Promise.all([
   fs.access("assets/dori/observation.png"),
   fs.access("assets/dori/recognition.png"),
   fs.access("assets/dori/identification.png"),
+  fs.access("assets/dori/detection-thumb.webp"),
+  fs.access("assets/dori/observation-thumb.webp"),
+  fs.access("assets/dori/recognition-thumb.webp"),
+  fs.access("assets/dori/identification-thumb.webp"),
 ]);
 
 const db = JSON.parse(dbText);
@@ -59,6 +63,7 @@ if (!js.includes("lens_calculator_unit")) throw new Error("Unit persistence logi
 if (!js.includes("lens_calculator_language")) throw new Error("Language persistence logic is missing.");
 if (!js.includes("densityLabel")) throw new Error("Unit-aware density display logic is missing.");
 if (!js.includes("doriContent")) throw new Error("DORI explanation content is missing.");
+if (!js.includes("-thumb.webp")) throw new Error("DORI UI is not using optimized thumbnails.");
 if (!Array.isArray(db.dictionary) || db.dictionary.length < 40) {
   throw new Error("Dictionary table is missing or too small.");
 }

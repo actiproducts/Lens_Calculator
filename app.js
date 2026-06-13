@@ -36,16 +36,16 @@ const elements = {
 
 const doriContent = {
   Detection: {
-    image: "assets/dori/detection.png",
+    image: "assets/dori/detection-thumb.webp",
   },
   Observation: {
-    image: "assets/dori/observation.png",
+    image: "assets/dori/observation-thumb.webp",
   },
   Recognition: {
-    image: "assets/dori/recognition.png",
+    image: "assets/dori/recognition-thumb.webp",
   },
   Identification: {
-    image: "assets/dori/identification.png",
+    image: "assets/dori/identification-thumb.webp",
   },
 };
 
